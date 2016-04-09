@@ -2,6 +2,8 @@
 
 set -e
 
+source /host/secrets.sh
+
 : ${MEDIAWIKI_SITE_NAME:=MediaWiki}
 
 if [ -z "$MEDIAWIKI_DB_HOST" -a -z "$MYSQL_PORT_3306_TCP" ]; then
